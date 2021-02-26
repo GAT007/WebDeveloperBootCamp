@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <button type='button'>Please do not submit the form</button>
+        <div>
+            <label for="username">Username : </label>
+            <input type="text" name="Username" id="username" placeholder="username">
+        </div>
+        <div>
+            <label for="password">Password : </label>
+            <input type="password" placeholder="password" name="password" id="password">
+        </div>
+        <div>
+            <label for="colorPicker">Color : </label>
+            <input type="color" id="colorPicker" name="color">
+        </div>
+        <div>
+            <label for="number">Number : <input type="number" placeholder="Enter a number" id="number"
+                    name="number"></label>
+        </div>
+
+        <div>
+            <input type="checkbox" name='scales' id='scales'>
+            <label for="scales">Scales</label>
+        </div>
+        <div>
+            <label for="horns">Horns</label>
+            <input type="checkbox" name="horns" id="horns">
+        </div>
+        <div>
+            <p>Sizes</p>
+            <label for="S">S</label>
+            <input type="radio" name="size" id="S" value="S">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+        </div>
+
+        <div>
+            <select name="pets" id="pet-select">
+                <option value=" ">Please select an option</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Hamster">Hamster</option>
+                <option value="Goldfish">Goldfish</option>
+            </select>
+        </div>
+
+
+        <div>
+            <label for="volume">Volume</label>
+            <input type="range" name='volume' min='0' max='500'>
+        </div>
+        <form action="">
+            <div>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="username">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password">
+            </div>
+            <button>Register</button>
+        </form>
+        <button>Submit</button>
+    </form>
+
+    <p>Youtube search box</p>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query">
+        <button>Find it for me!</button>
+    </form>
+
+</body>
+
+</html>
